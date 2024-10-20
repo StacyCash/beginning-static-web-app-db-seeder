@@ -1,4 +1,4 @@
-using CosmosDBPlayground.DatabaseSeeding.SeedBlogPosts;
+using CosmosDBPlayground.DatabaseSeeding.SeedBlogposts;
 using Microsoft.Azure.Cosmos;
 
 namespace CosmosDBPlayground.DatabaseSeeding;
@@ -34,15 +34,15 @@ internal class DatabaseSeeder: IDisposable
 
     private async Task SeedDatabase(Container container)
     {
-        List<BlogPost> allPosts = new()
+        List<Blogpost> allPosts = new()
         {
-            APIAuthorization.BlogPost,
-            FirstStaticWebApp.BlogPost,
-            LoadingFromApi.BlogPost,
-            Navigation.BlogPost,
-            SettingUpTheAngularStaticWebAppPipeline.BlogPost,
-            YourFirstAngularApp.BlogPost,
-            YourFirstPage.BlogPost
+            APIAuthorization.Blogpost,
+            FirstStaticWebApp.Blogpost,
+            LoadingFromApi.Blogpost,
+            Navigation.Blogpost,
+            SettingUpTheAngularStaticWebAppPipeline.Blogpost,
+            YourFirstAngularApp.Blogpost,
+            YourFirstPage.Blogpost
         };
 
         foreach (var blogPost in allPosts)
