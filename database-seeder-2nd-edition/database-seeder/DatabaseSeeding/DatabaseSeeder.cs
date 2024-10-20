@@ -11,7 +11,7 @@ internal class DatabaseSeeder: IDisposable
 {
     const string EndpointUri = "<Your CosmosDB Endpoint URL>";
     const string PrimaryKey = "<Your CosmosDB Primary Key>";
-
+    
     const string databaseId = "SwaBlog";
     const string containerId = "BlogContainer";
     const string stringsContainerId = "StringContainer";
@@ -64,7 +64,7 @@ internal class DatabaseSeeder: IDisposable
 
             Container container = await database.CreateContainerIfNotExistsAsync(containerId, "/Author");
 
-            Console.WriteLine($"Created Container: {container.Id");
+            Console.WriteLine($"Created Container: {container.Id}");
 
             return container;
         }
@@ -79,7 +79,7 @@ internal class DatabaseSeeder: IDisposable
     {
         try
         {
-            Database database = await cosmosClient.GetDatabase(databaseId);
+            Database database = await cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
             Container container = await database.CreateContainerIfNotExistsAsync(stringsContainerId, "/PartitionKey");
 
             Console.WriteLine($"Created Strings Container: {container.Id}");
@@ -103,9 +103,8 @@ internal class DatabaseSeeder: IDisposable
             {
                 var item = new
                 {
-                    id = Guid.NewGuid().ToString(),
-                    PartitionKey = "Tags",
-                    Value = value
+                    id = value,
+                    PartitionKey = "Tags"
                 };
 
                 var result = await container.CreateItemAsync(item);

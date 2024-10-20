@@ -2,15 +2,15 @@
 
 namespace CosmosDBPlayground.DatabaseSeeding;
 
-internal class BlogPost
+internal record BlogPost
 {
     [JsonProperty(PropertyName = "id")]
     public Guid Id { get; set; }
-    public string Title { get; set; }
-    public string Author { get; set; }
+    public required string Title { get; set; }
+    public required string Author { get; set; }
     public DateTime? PublishedDate { get; set; }
-    public string BlogPostMarkdown { get; set; }
-    public IEnumerable<string> Tags { get; set; }
+    public required string BlogPostMarkdown { get; set; }
+    public required IEnumerable<string> Tags { get; set; }
     public Status Status { get; set; }
 
 }
