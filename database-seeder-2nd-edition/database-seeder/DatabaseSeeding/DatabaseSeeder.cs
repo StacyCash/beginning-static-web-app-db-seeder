@@ -34,21 +34,21 @@ internal class DatabaseSeeder: IDisposable
 
     private async Task SeedDatabase(Container container)
     {
-        List<Blogpost> allPosts = new()
+        List<BlogPost> allPosts = new()
         {
-            APIAuthorization.Blogpost,
-            FirstStaticWebApp.Blogpost,
-            LoadingFromApi.Blogpost,
-            Navigation.Blogpost,
-            SettingUpTheAngularStaticWebAppPipeline.Blogpost,
-            YourFirstAngularApp.Blogpost,
-            YourFirstPage.Blogpost
+            APIAuthorization.BlogPost,
+            FirstStaticWebApp.BlogPost,
+            LoadingFromApi.BlogPost,
+            Navigation.BlogPost,
+            SettingUpTheAngularStaticWebAppPipeline.BlogPost,
+            YourFirstAngularApp.BlogPost,
+            YourFirstPage.BlogPost
         };
 
-        foreach (var blogpost in allPosts)
+        foreach (var blogPost in allPosts)
         {
-            var result = await container.CreateItemAsync(blogpost); 
-            Console.WriteLine($"Cost of creating {blogpost.Title}: {result.RequestCharge}");
+            var result = await container.CreateItemAsync(blogPost); 
+            Console.WriteLine($"Cost of creating {blogPost.Title}: {result.RequestCharge}");
         };
 
         Console.WriteLine("Blogposts seeded");
@@ -64,7 +64,7 @@ internal class DatabaseSeeder: IDisposable
 
             Container container = await database.CreateContainerIfNotExistsAsync(containerId, "/Author");
 
-            Console.WriteLine($"Created Container: {container.Id}");
+            Console.WriteLine($"Created Container: {container.Id");
 
             return container;
         }

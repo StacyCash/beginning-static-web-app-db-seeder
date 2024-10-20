@@ -2,7 +2,7 @@
 
 internal static class SettingUpTheAngularStaticWebAppPipeline
 {
-    internal static Blogpost Blogpost = new()
+    internal static BlogPost BlogPost = new()
     {
         Id = Guid.NewGuid(),
         Author = GlobalConstants.Author,
@@ -13,7 +13,7 @@ internal static class SettingUpTheAngularStaticWebAppPipeline
             Constants.Angular,
             Constants.StaticWebApps
         },
-        BlogpostMarkdown = @"Donec eget sapien a velit aliquet dictum non eget quam. Suspendisse tristique ultricies venenatis. Fusce vehicula augue malesuada turpis malesuada, nec volutpat mauris malesuada. Pellentesque mattis nisi vel dolor sagittis, vel placerat nunc consequat. Proin quis augue in purus rutrum sagittis a non turpis. Vivamus id pharetra dolor. Aenean id enim blandit leo posuere cursus tincidunt id diam. Donec sodales non quam a posuere. Pellentesque porttitor est non ligula faucibus accumsan. Curabitur vel erat quis lacus pulvinar suscipit. Etiam ornare, ante non congue aliquam, nisi ligula porta mauris, eu dignissim justo urna non nunc. Phasellus pretium rhoncus fermentum. Nullam vel eleifend augue, nec elementum risus.
+        BlogPostMarkdown = @"Donec eget sapien a velit aliquet dictum non eget quam. Suspendisse tristique ultricies venenatis. Fusce vehicula augue malesuada turpis malesuada, nec volutpat mauris malesuada. Pellentesque mattis nisi vel dolor sagittis, vel placerat nunc consequat. Proin quis augue in purus rutrum sagittis a non turpis. Vivamus id pharetra dolor. Aenean id enim blandit leo posuere cursus tincidunt id diam. Donec sodales non quam a posuere. Pellentesque porttitor est non ligula faucibus accumsan. Curabitur vel erat quis lacus pulvinar suscipit. Etiam ornare, ante non congue aliquam, nisi ligula porta mauris, eu dignissim justo urna non nunc. Phasellus pretium rhoncus fermentum. Nullam vel eleifend augue, nec elementum risus.
 
 Aliquam tortor lacus, imperdiet nec volutpat quis, venenatis vel quam. In consectetur, purus nec porttitor semper, nisi urna pharetra ex, ac bibendum dolor mauris non odio. Sed pulvinar ligula risus, ac sodales orci pulvinar eu. Morbi vulputate dolor vitae justo rhoncus, et molestie metus cursus. Proin risus nunc, egestas vitae pellentesque vitae, porttitor nec risus. Proin lectus dolor, vestibulum nec nulla eget, fermentum malesuada diam. Vivamus consectetur sagittis pharetra. Aenean eleifend sapien eu sem vehicula lacinia. Suspendisse quis molestie eros, ac imperdiet odio. Integer fermentum iaculis libero, nec pretium nibh mattis sed.
 
