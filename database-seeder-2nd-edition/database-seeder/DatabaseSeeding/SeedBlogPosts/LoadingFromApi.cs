@@ -1,8 +1,8 @@
-﻿namespace CosmosDBPlayground.DatabaseSeeding.SeedBlogPosts;
+﻿namespace CosmosDBPlayground.DatabaseSeeding.SeedBlogposts;
 
 internal static class LoadingFromApi
 {
-    internal static BlogPost BlogPost = new()
+    internal static Blogpost Blogpost = new()
     {
         Id = Guid.NewGuid(),
         Author = GlobalConstants.Author,
@@ -15,7 +15,7 @@ internal static class LoadingFromApi
             Constants.Azure,
             Constants.Functions,
         },
-        BlogPostMarkdown = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium id lectus nec vestibulum. Nam consectetur, turpis ac tempor iaculis, nulla dui pharetra magna, eu blandit felis dolor eget dolor. Donec aliquet sapien nec leo convallis, non venenatis diam imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris metus augue, dictum ut felis non, ultricies aliquet nunc. Sed interdum sapien sed tortor molestie mattis. Maecenas efficitur libero eu metus gravida, facilisis aliquam tortor lacinia. Mauris at quam volutpat, rhoncus lacus imperdiet, feugiat enim. Curabitur scelerisque et lorem a tincidunt. Sed in mauris et mauris lobortis luctus. Donec erat ligula, consectetur a eleifend dapibus, ornare sed neque. Donec condimentum porttitor sem, at imperdiet odio ultrices in. Morbi vitae iaculis orci. Praesent feugiat eros ut pellentesque dapibus.
+        BlogpostMarkdown = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium id lectus nec vestibulum. Nam consectetur, turpis ac tempor iaculis, nulla dui pharetra magna, eu blandit felis dolor eget dolor. Donec aliquet sapien nec leo convallis, non venenatis diam imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris metus augue, dictum ut felis non, ultricies aliquet nunc. Sed interdum sapien sed tortor molestie mattis. Maecenas efficitur libero eu metus gravida, facilisis aliquam tortor lacinia. Mauris at quam volutpat, rhoncus lacus imperdiet, feugiat enim. Curabitur scelerisque et lorem a tincidunt. Sed in mauris et mauris lobortis luctus. Donec erat ligula, consectetur a eleifend dapibus, ornare sed neque. Donec condimentum porttitor sem, at imperdiet odio ultrices in. Morbi vitae iaculis orci. Praesent feugiat eros ut pellentesque dapibus.
 
 ## Mauris posuere et quam a suscipit
 

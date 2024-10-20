@@ -1,8 +1,8 @@
-﻿namespace CosmosDBPlayground.DatabaseSeeding.SeedBlogPosts;
+﻿namespace CosmosDBPlayground.DatabaseSeeding.SeedBlogposts;
 
 internal static class YourFirstAngularApp
 {
-    internal static BlogPost BlogPost = new()
+    internal static Blogpost Blogpost = new()
     {
         Id = Guid.NewGuid(),
         Author = GlobalConstants.Author,
@@ -14,7 +14,7 @@ internal static class YourFirstAngularApp
             Constants.TypeScript,
             Constants.Angular
         },
-        BlogPostMarkdown = @"Mauris ullamcorper tempus justo, ut gravida felis facilisis ut. Mauris consequat sed sem sed egestas. Pellentesque ullamcorper, velit ac vestibulum egestas, sapien ipsum malesuada eros, vel facilisis justo ligula tincidunt ante. Donec suscipit ante mattis ex auctor congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam egestas dui quis diam egestas, non dictum ipsum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus nisi purus, molestie pellentesque turpis aliquam, tempus facilisis lorem. Sed feugiat tincidunt consequat. Suspendisse sed lectus sit amet quam scelerisque egestas lacinia id risus.
+        BlogpostMarkdown = @"Mauris ullamcorper tempus justo, ut gravida felis facilisis ut. Mauris consequat sed sem sed egestas. Pellentesque ullamcorper, velit ac vestibulum egestas, sapien ipsum malesuada eros, vel facilisis justo ligula tincidunt ante. Donec suscipit ante mattis ex auctor congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam egestas dui quis diam egestas, non dictum ipsum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus nisi purus, molestie pellentesque turpis aliquam, tempus facilisis lorem. Sed feugiat tincidunt consequat. Suspendisse sed lectus sit amet quam scelerisque egestas lacinia id risus.
 
 Pellentesque viverra sapien a sapien varius blandit. Suspendisse sollicitudin metus nec nisl ultrices lobortis. Quisque nec blandit odio. Vivamus eu tortor dapibus, rutrum diam non, molestie nulla. Pellentesque et nulla rutrum, varius ipsum iaculis, varius lacus. Mauris at viverra quam. Curabitur aliquam diam ac orci fringilla pretium.
 
